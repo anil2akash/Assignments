@@ -1,0 +1,123 @@
+WEB SCRAPING
+WORKSHEET - 1
+
+In Q1 to Q9, only one option is correct, Choose the correct option:
+
+1.Which of the following extracts information from user generated content? 			(  B  )
+A) Java script tagging			B) Web scraping					
+C) A/B testing				D) MROCs
+
+2.Which of the following is not a web scraping library in python?				(  C  )
+A) Selenium				B) Beautiful soup
+C) Requests				C) scrapy
+
+3.Selenium tests __________?									(  D  )
+A) Browser based applications		B) DOS applications
+C) GUI applications			D) All of the above
+
+4.Task of crawling is performed by a complex software which is known as:			(  B  )
+A) Scraper				B) Crawler
+C) Boat					D) Spider
+
+5.Which of the following commands is used to access name of a tag in Beautiful Soup?		(  B  )
+A) tag.attrs				B) tag.name
+C) tag,id				C) tag['id']
+
+6.Which of the following is the default parser in Beautiful Soup?				(  C  )
+A) html.parser				B) html5lib
+C) lxml					D) lxml-xml
+
+7.In selenium the webdriver is used to?								(  C  )
+A) design a test using selenese
+B) test a web application on firefox only
+C) execute tests on HtmlUnit browser
+D) to download any content from a webpage
+
+8.In selenium, driver.find_elements_by_xpath('given xpath') returns:				(  D  )
+A) the first webelement associated with the 'given xpath'
+B) the url of first webelement associated with the 'given xpath'
+C) the list of all webelements associated with the 'given xpath'
+D) all the attributes of the first webelement associated with the 'given xpath'
+
+9.The script 'window.scrollBy(0,a) scrolls the webpage by?					(  D  )
+A) 'a' number of horizontal spaces
+B) 'a' number of lines
+C) 'a' number of pixels horizontally
+D) 'a' number of pixels vertically
+
+
+
+In Q10, more than one options are correct, Choose all the correct options:	
+		
+10.Which of the following is(are) tags of HTML?       					   ( A,B,D )
+A) <a>					B) <b>
+C) <image>				D) <href>
+
+Q10 to Q13 are subjective answer type questions, Answer them briefly.
+
+11.What is the main difference between a web scraper and a web crawler?
+
+    -->  Web Scraper Extract or Scrape the Data from Webpages, 
+    -->  While Web Crawler usually Focus on Indexing the Web
+
+12.What is 'robots.txt' file? What is the use of 'robots.txt' file?
+
+A robots.txt file contains instructions for bots that tell them which webpages they can and cannot access, this 
+file is included in the source files of most websites. Robots.txt files are most relevant for web crawlers from 
+search engines like Google
+
+13.What are static and dynamic web pages?
+
+   -->  In Static Web Pages data do not changes until anyone changes it manually and hence Data will be 
+Static in Nature.
+   -->  In Dynamic Web Pages Data is First interoperate at server side and due to which it does not remain 
+same on every call and this makes Data dynamic in Nature.
+
+Q14 and Q15 are programming practice questions. Solve it using JUPYTER NOTEBOOK and paste the 
+solution in your answer sheets.
+
+14.Write a python program to check whether a webpage contains a title or not.
+
+from urllib.request import urlopen
+from urllib.error import HTTPError
+from bs4 import BeautifulSoup
+
+def getTitle(url):
+    try:
+        html = urlopen(url)
+    except HTTPError as e:
+        return None
+    try:
+        bsObj = BeautifulSoup(html.read(), "lxml")
+        title = bsObj.body.h1
+    except AttributeError as e:
+        return None
+    return title
+    
+    title = getTitle(url)
+    if title == None:
+      return "Title could not be found"
+    else:
+      return title
+
+print(getTitle("https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en"))
+print(getTitle("http://www.example.com/"))
+
+Output :
+              None	
+             <h1>Example Domain</h1>
+
+
+15.Write a python program to access the search bar and search button on images.google.com.
+
+import webbrowser
+lib=input("Enter what you want to search for:")
+ur="https://www.google.com/search?q=python+logo&hl=en&sxsrf=ALeKk038iX43fnhyuyVZG-
+3JjWrMvlKIZg:1598518150653&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjTkqWUgLvrAhUv6XMB
+HSU6BQ8Q_AUoAXoECA8QAw&biw=1242&bih=597python%20logo"
+webbrowser.open_new(ur+lib)
+
+Output :
+
+Enter what you want to search for: 
+
