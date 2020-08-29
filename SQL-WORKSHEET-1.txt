@@ -1,0 +1,72 @@
+					WORKSHEET-1
+					    SQL
+Q1 and Q2 have one or more correct answer. Choose all the correct option to answer your question.
+1. Which of the following is/are DDL commands in SQL?						 (  A,D  )
+A) Create	B) Update
+C) Delete	D) ALTER
+
+2. Which of the following is/are DML commands in SQL?  						(  A,B,C  )
+A) Update	B) Delete
+C) Select	D) Drop
+
+Q3 to Q10 have only one correct answer. Choose the correct option to answer your question.
+3. Full form of SQL is:										 (  B  )
+A) Strut querying language	B) Structured Query Language
+C) Simple Query Language	D) None of them
+
+4. Full form of DDL is:										 (  B  )
+A) Descriptive Designed Language	B) Data Definition Language
+C) Data Descriptive Language	D) None of the above.
+
+5. DML is: 											 (  A  )
+A) Data Manipulation Language	B) Data Management Language
+C) Data Modeling Language	D) None of these
+
+6. Which of the following statements can be used to create a table with column B int type and C  float type?   (  C  )
+A) Table A (B int, C float)	B) Create A (b int, C float)
+C) Create Table A (B int,C float)	D) All of them
+
+7. Which of the following statements can be used to add a column D (float type) to the table A created above?  (  B  )
+A) Table A ( D float)	B) Alter Table A ADD COLUMN D float
+C) Table A( B int, C float, D float)	D) None of them
+
+8. Which of the following statements can be used to drop the column added in the above question? 	       (  B  )
+A) Table A Drop D	B) Alter Table A Drop Column D
+C) Delete D from A	D) None of them
+
+9. Which of the following statements can be used to change the data type (from float to int ) of the column D of table A created in above questions?  (  B  )
+A) Table A (D float int)	B) Alter Table A Alter Column D int
+C) Alter Table A D float int	D) Alter table A Column D float to int
+
+10. Suppose we want to make Column B of Table A as primary key of the table. By which of the following statements we can do it?			      (  C  )
+A) Alter Table A Add Constraint Primary Key B	B) Alter table (B primary key)
+C) Alter Table A Add Primary key B	D) None of them
+
+Q11 to Q15 are subjective answer type questions, Answer them briefly.
+
+11. What is data-warehouse?
+
+A data warehouse essentially combines information from several sources into one comprehensive database.
+It is a technology that aggregates structured data from one or more sources so that it can be compared and analyzed for greater business intelligence. 
+
+12. What is the difference between OLTP VS OLAP?
+
+
+OLTP - Online Transaction Processing is an operational system that supports transaction-oriented applications in a 3-tier architecture.
+     - It administers the day to day transaction of an organization. 
+     - OLTP is basically focused on query processing, maintaining data integrity in multi-access environments as well as effectiveness 
+        that is measured by the total number of transactions per second. 
+
+OLAP - Online Analytical Processing is a category of software that allows users to analyze information from multiple database systems at the same time.
+     - It is a technology that enables analysts to extract and view business data from different points of view.
+
+13. What is Star-Schema?
+
+    --> In STAR Schema, the center of the star can have one fact table and a number of associated dimension tables. 
+    --> It is known as star schema as its structure resembles a star. 
+    --> The star schema is the simplest type of Data Warehouse schema. 
+    --> It is also known as Star Join Schema and is optimized for querying large data sets.
+
+14. What do you mean by SETL?
+
+SETL – SET Language is a very high-level programming language based on the mathematical theory of sets
