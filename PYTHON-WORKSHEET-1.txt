@@ -1,0 +1,192 @@
+					WORKSHEET-1
+					  PYTHON
+
+Q1 to Q8 have only one correct answer. Choose the correct option to answer your question.
+
+1. Which of the following operators is used to calculate remainder in a division?	(  C  )
+
+A) #				B) &
+C) %				D) $
+
+2. In python 2//3 is equal to?								(  B  )
+
+A) 0.666			B) 0
+C) 1				D) 0.67
+
+3. In python, 6<<2 is equal to?								(  C  )
+
+A) 36				B) 10
+C) 24				D) 45
+
+4. In python, 6&2 will give which of the following as output?				(  A  )
+
+A) 2				B) True
+C) False			D) 0
+
+5. In python, 6|2 will give which of the following as output?				Ans : 6
+
+A) 2				B) 4
+C) 0				D) 16
+
+6. What does the finally keyword denotes in python?					(  C  )
+
+A) It is used to mark the end of the code
+B) It encloses the lines of code which will be executed if any error occurs-
+   while executing the lines of code in the try block.
+C) the finally block will be executed no matter if the try block raises an error or not.
+D) None of the above
+
+7. What does raise keyword is used for in python?					(  A  )
+
+A) It is used to raise an exception.	B) It is used to define lambda function
+C) it's not a keyword in python.	D) None of the above
+
+8. Which of the following is a common use case of yield keyword in python?		(  A  )
+
+A) in defining an iterator		B) while defining a lambda function
+C) in defining a generator		D) in for loop.
+
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+
+9. Which of the following are the valid variable names?					(  A,C  )
+
+A) _abc					B) 1abc
+C) abc2					D) None of the above
+
+10. Which of the following are the keywords in python?					(  A,B  )
+
+A) yield				B) raise
+C) look-in				D) all of the above
+
+Q11 to Q15 are programming questions. Answer them in Jupyter Notebook.
+
+11. Write a python program to find the factorial of a number.
+
+def factorial(n): 
+    if n < 0: 
+        return 0
+    elif n == 0 or n == 1: 
+        return 1
+    else: 
+        fact = 1
+        while(n > 1): 
+            fact *= n 
+            n -= 1
+        return fact
+
+num = int(input("Enter any number : "))
+print("Factorial of num is", factorial(num))
+	
+Output : 
+
+	Enter any number : 5
+
+	Factorial of 5 is 120
+
+
+12. Write a python program to find whether a number is prime or composite.
+
+num = int(input("Enter any number : "))
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is NOT a PRIME number")
+            break
+    else:
+        print(num, "is a PRIME number")
+elif num == 0 or 1:
+    print(num, "is a neither PRIME NOR COMPOSITE number")
+else:
+    print(num, "is NOT a PRIME number it is a COMPOSITE number")
+
+Output : 
+
+	Enter any number : 5
+	5 is a PRIME number
+
+
+13. Write a python program to check whether a given string is palindrome or not.
+
+string = input("Please enter your own String : ")
+
+if(string == string[:: - 1]):
+   print("This is a Palindrome String")
+else:
+   print("This is Not a Palindrome String")
+
+
+Output : 
+
+	Please enter your own String : hello
+	This is Not a Palindrome String
+
+	Please enter your own String : mom
+	This is a Palindrome String
+
+
+14. Write a Python program to get the third side of right-angled triangle from two given sides.
+
+from math import sqrt
+
+print('Assume the sides are a, b, c and c is the hypotenuse.')
+
+choice = input('Which side (a, b, c) do you want to calculate? side: ')
+
+if choice == 'c':
+
+    a = float(input('Input the length of side a: '))
+    b = float(input('Input the length of side b: '))
+
+    c = sqrt(a * a + b * b)
+
+    print('The length of side c is %g: ' %(c))
+
+elif choice == 'b':
+    a = float(input('Input the length of side a: '))
+    c = float(input('Input the length of side c: '))
+
+    b = sqrt(c * c - a * a)
+
+    print('The length of side b is %g: ' %(b))
+
+elif choice == 'a':
+    b = float(input('Input the length of side b: '))
+    c = float(input('Input the length of side c: '))
+
+    a = sqrt((c * c) - (b * b))
+
+    print('The length of side a is %g: ' %(a))
+
+else:
+    print('Invalid Input!')
+
+
+Output : 
+
+	Assume the sides are a, b, c and c is the hypotenuse.
+	Which side (a, b, c) do you want to calculate? side: c
+	Input the length of side a: 2
+	Input the length of side b: 3
+	The length of side c is 3.60555: 
+
+
+15. Write a python program to print the frequency of each of the characters present in a given string.
+
+from collections import Counter 
+
+print('Enter The String:')
+x = input() 
+
+res = Counter(x) 
+
+print ("Count of all characters x is :\n " + str(res))
+
+
+Output : 
+
+	Enter The String:
+	anil kumar
+	Count of all characters in x is :
+	 Counter({'a': 2, 'n': 1, 'i': 1, 'l': 1, ' ': 1, 'k': 1, 'u': 1, 'm': 1, 'r': 1})
+
+
