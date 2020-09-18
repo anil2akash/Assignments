@@ -1,0 +1,140 @@
+				MACHINE LEARNING - WORKSHEET 3
+
+
+Q1 to Q15 are subjective answer type questions,Answer them briefly.
+
+1.Give short description each of Linear,RBF,Polynomial kernels used in SVM.
+Linear Kernel:
+---> It is used when the data is Linearly separable,that is,it can be separated using a single Line.
+--->It is one of the most common kernels to be used.
+--->It is mostly used when there are a Large number of Features in a particular Data Set.
+
+RBF - Radial Basis Function:
+
+---> It is a popular Kernel method used in SVM models.RBF kernel is a function whose value depends on the distance from the origin or from some point.
+
+Polynomial kernel:
+
+---> In general it is expressed as K(X1 ,X2) = (a + XT1X2)b ,a = constant term,b = degree of kernel
+--->In the polynomial kernel,we simply calculate the dot product by increasing the power of the kernel.
+
+2.R-squared or Residual Sum of Squares (RSS) which one of these two is a better measure of goodness of fit of model in regression and why?
+
+---> R2 always takes on a value between 0 and 1.The closer R2 is to 1,the better the estimated regression equation fits.
+
+---> Residual Sum of Squares(RSS): 
+	This expression is also known as unexplained variation and is the portion of total variation that measures errors between the actual values and those estimated by the regression equation
+
+---> The smaller the value of RSS relative to ESS,the better the regression line fits or explains the relationship between the independent and dependent variables
+
+
+3.What are TSS (Total Sum of Squares),ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) in regression.Also mention the equation relating these three metrics with each other.
+
+--->Explained Sum of Squares(ESS): This expression is also known as explained variation,the ESS is the portion of total variation that measures how well the regression equation explains the relationship between X and Y
+
+---> Residual Sum of Squares(RSS): This expression is also known as unexplained variation and is the portion of total variation that measures errors between the actual values and those estimated by the regression equation
+
+---> The smaller the value of RSS relative to ESS,the better the regression line fits or explains the relationship between the independent and dependent variables
+
+Total Sum of Squares(TSS) = RSS + ESS
+
+4.What is Gini -impurity index?
+
+---> It is the probability of incorrectly classifying a randomly chosen element in the dataset if it were randomly labeled according to the class distribution in the dataset.
+
+	It is calculated as G = Summation(i=1 to n)(p(i)*(1-p(i)))
+
+ Where n is the number of class and p(i) is the probability of randomly picking an element of class i.
+
+5.Are unregularized decision-trees prone to overfitting? If yes,why?
+
+6.What is an ensemble technique in machine learning?
+
+Ensemble technique in ML: 
+
+---> It is the method of technique that combines several base models in order to produce one optical predictive model
+
+7.What is the difference between Bagging and Boosting techniques?
+
+--->Bagging and Boosting are two types of Ensemble Techniques of ML in which the variance of single estimate is decreased-
+by combining different model estimates resulting into higher stability of the model
+
+8.what is out-of-bag error in random forests?
+
+---> It is also called Out-of-Bag Estimate,it's a method of measuring the prediction error of random forests utilizing bootstrap-
+aggregating(bagging) to sub-sample data samples used for training,it is the mean prediction error on each training sample.
+
+9.What is K-fold cross-validation?
+
+--->It is a Statistical resampling method used to evaluate ML Models on a limited sample data,
+It is commonly used to compare and select a model for a given predictive modeling problem because it is easy to understand,
+easy to implement,and results in skill estimates that generally have a lower bias than other methods.
+
+10.What is hyper parameter tuning in machine learning and why it is done?
+
+--->Parameters which define the model architecture are referred to as hyper parameters and this process of searching-
+ for the ideal model architecture is referred to as hyper parameter tuning.
+
+11.What issues can occur if we have a large learning rate in Gradient Descent?
+
+--->This Parameter scales the magnitude of our weight updates in order to minimize the networks loss function,
+If our learning rate is very low then training will progress very slowly as you are making very tiny updates to the weights in our network.
+However,if our learning rate is very high,it can cause undesirable divergent behavior in our loss function
+
+12.What is bias-variance trade off in machine learning?
+
+---> Bias is the Simplifying assumptions made by the model to make the target function easier to approximate.
+---> Variance is the amount that the estimate of the target function will change with different training data.
+---> Trade-off is tension between the error introduced by the bias and the variance.
+
+13.What is the need of regularization in machine learning?
+
+--->Regularization is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting
+
+14.Differentiate between Adaboost and Gradient Boosting
+
+--->Gradient Boosting is a class of boosting algorithms that compute the gradient of a secondary loss function to improve accuracy iteratively.
+    Adaboost is a kind of gradient boosting,using an exponential loss function
+
+15.Can we use Logistic Regression for classification of Non-Linear Data? If not,why?
+
+--->No,we can't use Logistic Regression for Classification of Non-Linear Data as it uses linear equation to find the best fit line for-
+dividing the classes which cannot be found in case of non-linear data and the model fails to give good results.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
