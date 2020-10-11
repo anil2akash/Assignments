@@ -1,0 +1,114 @@
+		MACHINE LEARNING - WORKSHEET 4
+
+In Q1 to Q8, only one option is correct, Choose the correct option:
+
+1. Which of the following in sklearn library is used for hyper parameter tuning? 			( A )
+
+A) GridSearchCV()				B) RandomizedCV()
+C) K-fold Cross Validation			D) None of the above
+
+2. In which of the below ensemble techniques trees are trained in parallel? 				( D )
+
+A) Random forest				B) Adaboost
+C) Gradient Boosting				D) All of the above
+
+3. In machine learning, if in the below line of code: 
+	sklearn.svm.SVC (C=1.0, kernel='rbf', degree=3)
+   we increasing the C hyper parameter, what will happen? 						( B )
+
+A) The regularization will increase		B) The regularization will decrease
+C) No effect on regularization			D) kernel will be changed to linear
+
+4. Check the below line of code and answer the following questions: 
+     sklearn.tree.DecisionTreeClassifier(*, criterion='gini', splitter='best', max_depth=None,min_samples_split=2)
+   Which of the following is true regarding max_depth hyper parameter? 					( C )
+
+A) It regularizes the decision tree by limiting the maximum depth up to which a tree can be grown.
+B) It denotes the number of children a node can have.
+C) both A & B
+D) None of the above
+
+5. Which of the following is true regarding Random Forests? 						( C )
+
+A) It's an ensemble of weak learners.
+B) The component trees are trained in series
+C) In case of classification problem, the prediction is made by taking mode of the class labels predicted by the component trees.
+D) None of the above
+
+6. What can be the disadvantage if the learning rate is very high in gradient descent?			( C )
+
+A) Gradient Descent algorithm can diverge from the optimal solution.
+B) Gradient Descent algorithm can keep oscillating around the optimal solution and may not settle.
+C) Both of them D)None of them.
+
+7. As the model complexity increases, what will happen? 						( B )
+
+A) Bias will increase, Variance decrease	B) Bias will decrease, Variance increase 
+C) Both bias and variance increase		D) Both bias and variance decrease.
+
+8. Suppose I have a linear regression model which is performing as follows: Train accuracy=0.95
+Test accuracy=0.75
+Which of the following is true regarding the model? 							( B )
+
+A) model is underfitting			B) model is overfitting
+C) model is performing good			D) None of the above
+
+Q9 to Q15 are subjective answer type questions, Answer them briefly.
+
+9. Suppose we have a dataset which have two classes A and B. 
+The percentage of class A is 40% and percentage of class B is 60%. 
+Calculate the Gini index and entropy of the dataset.
+
+Entropy = -[((0.4)*(-1.3219)) + ((0.6)*(-0.7369))] = -[ -0.52876 -0.44214] = 0.9709.
+
+Gini Index = 1 - [(0.4)*(0.4) +(0.6)*(0.6)] = 1 - [0.16+0.36] = 1 - 0.52 = 0.48.
+
+10. What are the advantages of Random Forests over Decision Tree?
+
+There are many disadvantages of using a random forest over a simple decision tree:
+---> It's more complex.
+---> It's hard to visualize the model or understand why it predicted something.
+---> It's more difficult to implement.
+---> It's more computationally expensive.
+
+
+11. What is the need of scaling all numerical features in a dataset? Name any two techniques used for scaling.
+
+---> Feature Scaling or Standardization is a step of Data Pre Processing which is applied to independent variables or features of data. 
+     It basically helps to normalise the data within a particular range. Sometimes, it also helps in speeding up the calculations in an algorithm.
+
+---> The most common techniques of feature scaling is Normalization and Standardization. 
+---> Normalization is used when we want to bound our values between two numbers, typically, between [0,1] or [-1,1]. 
+--->While Standardization transforms the data to have zero mean and a variance of 1, they make our data unitless
+
+12. Write down some advantages which scaling provides in optimization using gradient descent algorithm.
+
+---> Gradient descent which is an optimization algorithm often used in Logistic Regression, SVM, Neural Networks etc. 
+---> It is prominent to use where if features are on different scale, certain weights are updated faster than others. 
+---> Feature scaling helps in causing Gradient Descent to converge much faster as standardizing all the variables on to the -
+     same scale, for example, for a linear regression makes it easy to calculate the slope ( y = mx + c) where we normalize the M parameter to converge faster.
+
+
+13. In case of a highly imbalanced dataset for a classification problem, is accuracy a good metric to measure the performance of the model. If not, why?
+
+   No Accuracy is Not a Good metric to measure the performance of the model in the case of a highly imbalanced dataset for a classification problem because-
+it doesn't distinguish between the number of correctly classified examples of different classes.
+
+14. What is "f-score" metric? Write its mathematical formula.
+
+---> The F-score, also called the F1-score, is a measure of a model's accuracy on a dataset. It is used to evaluate binary classification systems, 
+     which classify examples into 'positive' or 'negative'.
+---> It is a way of combining the precision and recall of the model, and it is defined as the harmonic mean of the model's precision and recall.
+---> It is commonly used for evaluating information retrieval systems such as search engines, and also for many kinds of machine learning models, 
+     in particular in natural language processing.
+
+
+F1 = 2*[(precision * recall)/(precision + recall)]
+
+
+
+
+
+
+
+
