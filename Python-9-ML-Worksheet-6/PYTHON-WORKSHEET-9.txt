@@ -1,0 +1,66 @@
+		PYTHON – WORKSHEET 9 (PANDAS)
+
+Q1 to Q8 have only one correct answer. Choose the correct option to answer your question.
+
+1. Which among the following options can be used to create a DataFrame in Pandas? 			( D )
+
+A) An ndarray				B) a python dictionary
+C) A scalar value			D) All of the above
+
+2. A series is a one-dimensional array which is labelled and can hold any data type.  			( A )
+
+A) True					B) False
+
+3. Which of the following operation works with the same syntax as the analogous dictionary operations?	( D )
+
+A) Getting columns			B) setting columns
+C) deleting columns			D) All of the above
+
+4. pandas.NA = = pandas.NA, will give which of the following result? 					( D )
+
+A) <NA>					B) True
+C) False				D) Error
+
+5. A panel is a	container of data in pandas? 								( C )
+
+A) 1 dimensional			B) 2 dimensional
+C) 3 dimensional			D) infinite dimensions
+
+6. What will be the output of the following lines of code? 						( D )
+
+	import pandas as pd
+	import numpy as np
+	s = pd.Series(np.random.randn(4)) print(s.ndim)
+
+A) Error				B) 3
+C) 2					D) 1
+
+7. Which of the following indexing capabilities is used as a concise means of selecting data from a pandas object? ( D )
+
+A) in					B) iy
+C) ix					D) ipy
+
+8. All pandas data structures are mutable but not always mutable. 					( B )
+
+A) size, value				B) value, size
+C) semantic, size			D) None of these
+
+Q9 and Q10 have multiple correct answers. Choose all the correct options to answer your question.
+
+9. Select the correct statements from the following. 							( B,C,D )
+
+A) A DataFrame is like a fixed-size dictionary in that you can get and set values by index label.
+B) Series can be passed into most NumPy methods expecting an ndarray.
+C) A key difference between Series and ndarray is that operations between Series automatically align the data based on label
+D) In pandas, Index values must be unique
+
+10. Which of the following file formats are allowed for input output in pandas? 			( A,B,C)
+
+A) JSON					B) HTML
+C) CSV					D) TXT
+
+
+
+
+
+
