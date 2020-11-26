@@ -1,0 +1,139 @@
+
+				Statistics– WORKSHEET 6
+
+Q1 to Q9 have only one correct answer. Choose the correct option to answer your question.
+
+1. Which of the following is the correct formula for total variation?  					( A )
+
+a) Total Variation = Residual Variation – Regression Variation
+b) Total Variation = Residual Variation + Regression Variation
+c) Total Variation = Residual Variation * Regression Variation
+d) All of the mentioned
+
+2. Collection of exchangeable binary outcomes for the same covariate data are called ______ outcomes. 	( C )
+
+a) random
+b) direct
+c) binomial
+d) none of the mentioned
+
+3. How many outcomes are possible with bernoulli trial?  						( A )
+
+a) 2
+b) 3
+c) 4
+d) None of the mentioned
+
+4. If Ho is true and we reject it, then it is called:  							( A )
+
+(a) Type-I error
+(b) Type-II error
+(c) Standard error
+(d) Sampling error
+
+5. Level of significance is also called:  								( B )
+
+(a) Power of the test
+(b) Size of the test
+(c) Level of confidence
+(d) Confidence coefficient
+
+6. The chance of rejecting a true hypothesis decreases when sample size: 				( B )
+
+(a) Decreases
+(b) Increases
+(c) Both of them
+(d) None of them
+
+7. Which of the following testing is concerned with making decisions using data?  			( B )
+
+(a) Probability
+(b) Hypothesis
+(c) Causal
+(d) None of the mentioned
+
+8. What is the purpose of multiple testing in statistical inference?  					( D )
+
+(a) Minimize errors
+(b) Minimize false positives
+(c) Minimize false negatives
+(d) All of the mentioned
+
+9. Normalized data is centered at______ and has unit equal to standard deviations of the original data.  ( A )
+
+(a) 0					(b) 5
+(c) 1					(d) 10
+
+Q10and Q15 are subjective answer type questions, Answer them in your own words briefly.
+
+10. What Is Bayes' Theorem?
+
+    The Bayes’ theorem is a mathematical formula used to determine the conditional probability of events. 
+    Essentially, the Bayes’ theorem describes the probability of an event based on prior knowledge of the-
+    conditions that might be relevant to the event.
+
+    The Bayes’ theorem is expressed in the following formula:
+
+     	p(A|B)=(p(B|A)*p(A))/p(B)
+
+	Where:
+
+	P(A|B) – the probability of event A occurring, given event B has occurred
+	P(B|A) – the probability of event B occurring, given event A has occurred
+	P(A) – the probability of event A
+	P(B) – the probability of event B
+
+11. What is z-score?
+
+     The z-score (standard score) gives us an idea of how far a data point is from the mean. 
+     z-score is the number of standard deviations from the mean value of the reference population.
+
+	The basic z score formula for a sample is:
+
+		z = (x – µ) / s
+
+12. What is t-test?
+
+---> A t-test is a type of inferential statistic used to determine the significant difference between the means of two groups, 
+     which may be related in certain features.
+
+---> A t-test is used as a hypothesis testing tool, which allows testing of an assumption applicable to a population. 
+
+---> A t-test looks at the t-statistic, the t-distribution values, and the degrees of freedom to determine the statistical significance. 
+     To conduct a test with three or more means, one must use an analysis of variance.
+
+13. What is a percentile?
+
+---> In statistics, a percentile is a type of quantile which divides the given probability distribution, or sample, into 100 equal-sized intervals
+     this allows the data to be analyzed in terms of percentages.
+---> Percentiles are used to understand and interpret data. The nth percentile of a set of data is the value at which n percent of the data is below it. 
+
+	Percentiles for the values in a given data set can be calculated using the formula:
+
+	n = (P/100) x N
+
+	where N = number of values in the data set, 
+	      P = percentile, and 
+	      n = ordinal rank of a given value in the data set sorted from smallest to largest.
+
+14. What is ANOVA?
+
+	ANOVA - Analysis of variance
+---> It is an analysis tool used in statistics that splits an observed aggregate variability found inside a data set into two parts(systematic and random).
+     The systematic factors have a statistical influence on the given data set, while the random factors do not. 
+---> ANOVA test is used to determine the influence that independent variables have on the dependent variable in a regression study.
+
+	The Formula for ANOVA is:
+
+	F= MST/MSE
+
+	where:
+
+	F=ANOVA coefficient
+	MST=Mean sum of squares due to treatment
+	MSE=Mean sum of squares due to error	
+
+15. How can ANOVA help?
+
+---> The one-way ANOVA can help to know whether or not there are significant differences between the means of independent variables.
+
