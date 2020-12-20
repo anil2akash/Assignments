@@ -1,0 +1,63 @@
+
+	MACHINE LEARNING – WORKSHEET 11  (LINEAR REGRESSION)
+
+In Q1 to Q8, only one option is correct, Choose the correct option:
+
+1. What happens to R2 measure if we add a new feature?  						( B )
+
+A) remains same					B) always increases
+C) may or may not increase			D) always decreases
+
+2. The correct relationship between SST, SSR and SSE is given by:  					( D )
+
+A) SSR = SST + SSE				B) SST = SSR + SSE
+C) SSE = SSR – SST				D) None of the above
+
+3. Residuals in regression analysis can be defined as:  						( A )
+
+A) difference between the actual value and the predicted value.
+B) difference between the actual value and the mean of predicted value.
+C) difference between the actual value and mean of dependent variable.
+D) None of the above.
+
+4. In a simple linear regression model, if we change the input variable by 1 unit,
+   then how much output variable will change?  								( C )
+
+A) By 1						B) No Change
+C) By its slope					D) None of the above
+
+5. If the coefficient of determination is equal to 1, then correlation coefficient: 			( B )
+
+A) must also be equal to 1			B) can be either -1 or 1
+C) can be any value between -1 to 1		D) must be -1
+
+6. Which of the following plot is best suited for the linear relationship of continuous variables? 	( A )
+A) Scatter plotB) HistogramsC) Pie chartsD) All of the above
+7.The ratio of MSR/MSE produces: 									( B )A) t-statisticsB) f-statisticsC) z-statisticsD) None of the above.
+8. Which of the following regularizations uses only L2 normalization for its penalty parameter? 	 ( C )
+
+A) Lasso					B) Elastic Nets
+C) Ridge					D) All of the above
+
+In Q9 to Q11, more than one options are correct, Choose all the correct options:
+
+9. Which of the following statement/s are true for best fitted line? 					( A,D )
+
+A) It shows the causal relationship between dependent and independent variables
+B) It shows the positive or negative relation between dependent and independent variables
+C) It always goes through origin
+D) It is a straight line that is the best approximation of the given data sets
+
+10. Regularizations helps in: 										( A,C )
+
+A) Reducing the training time			B) Generalizing the test set
+C) Automatic feature selection			D) Grouping the data
+
+11. Linear regression can be implemented through: 							( A,B )
+
+A) Normal Equation				B) Singular Value Decomposition
+C) Parity checks				D) nodes
+
+
+
+
